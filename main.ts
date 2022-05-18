@@ -3,8 +3,14 @@ DFRobotMaqueenPlus.I2CInit()
 basic.forever(function () {
     if (distantzia > 60) {
         DFRobotMaqueenPlus.mototRun(Motors.ALL, Dir.CW, 200)
+    } else if (distantzia > 50) {
+        DFRobotMaqueenPlus.mototRun(Motors.ALL, Dir.CW, 150)
+    } else if (distantzia > 45) {
+        DFRobotMaqueenPlus.mototRun(Motors.ALL, Dir.CW, 125)
     } else if (distantzia > 40) {
         DFRobotMaqueenPlus.mototRun(Motors.ALL, Dir.CW, 100)
+    } else if (distantzia > 30) {
+        DFRobotMaqueenPlus.mototRun(Motors.ALL, Dir.CW, 75)
     } else if (distantzia > 20) {
         DFRobotMaqueenPlus.mototRun(Motors.ALL, Dir.CW, 50)
     } else if (distantzia > 10) {
